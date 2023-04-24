@@ -4,6 +4,7 @@ namespace Offset {
 	uintptr_t sv_cheats = 0x2A20AA0;
 	//Camera
 	uintptr_t cg_fov = 0x2A413E0;
+	uintptr_t cg_fovmin = 0x2A41440;
 	uintptr_t cg_thirdperson = 0x2A45BE0;
 	//Visual
 	uintptr_t cg_usecolorcontrol = 0x2A44800;
@@ -11,6 +12,10 @@ namespace Offset {
 }
 
 namespace Function {
+	void CG_FOVMIN(float value)
+	{
+		*(float*)Offset::cg_fovmin = value;
+	}
 	void CG_FOV(float value)
 	{
 		*(float*)Offset::cg_fov = value;
@@ -230,8 +235,12 @@ namespace Function {
 		}
 	}
 
-
-//	const static auto Cbuf_AddText = reinterpret_cast<std::uintptr_t(__fastcall*)(int, const char*)>(0x0); (je l'enlève de la source !)
+	void chams(float a1, float a2, float a3)
+	{
+		*(float*)0x2A3EBC0 = a1;
+		*(float*)(0x2A3EBC0 + 0x4) = a2;
+		*(float*)(0x2A3EBC0 + 0x8) = a3;
+	}
 
 
 }
