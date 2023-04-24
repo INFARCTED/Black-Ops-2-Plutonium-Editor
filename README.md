@@ -26,7 +26,7 @@ je vais aussi faire une autre méthode que les téléchargement des camouflages,
 
 
 **CONFIGURATION (SAVE/LOAD)**
-![Watch the video](https://cdn.discordapp.com/attachments/1098356561291788459/1100178684264054885/2023-04-24_23-56-39.mp4)
+![Watch the video](https://cdn.discordapp.com/attachments/1098356561291788459/1100179891724505178/image.png)](https://cdn.discordapp.com/attachments/1098356561291788459/1100178684264054885/2023-04-24_23-56-39.mp4)
 
 **DISCORD : discord.gg/infarcted**
 
