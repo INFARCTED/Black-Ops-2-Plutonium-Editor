@@ -30,7 +30,7 @@ void Engine_Tab()
 		{
 			Function::DarkMap(5);
 		}
-		ImGui::Separator();
+		ImGui::Separator(); ImGui::Text("VC Edit");
 		ImGui::Checkbox("Change VC_FBM", &Var::BCustom_vc_fbm);
 		if (Var::BCustom_vc_fbm)
 		{
@@ -157,7 +157,8 @@ void Engine_Tab()
 				}
 			}
 		}
-		ImGui::Separator();
+		ImGui::Separator(); ImGui::Text("Player Chams");
+
 		ImGui::Checkbox("Chams color", &Var::BCustom_HUD);
 		if (Var::BCustom_HUD)
 		{
@@ -171,6 +172,40 @@ void Engine_Tab()
 				{
 					Function::chams(Var::chams_a1, Var::chams_a2, Var::chams_a3);
 				}
+			}
+		}
+
+		ImGui::Separator(); ImGui::Text("Screen FX");
+
+		ImGui::Checkbox("Water Sheeting FX", &Var::BEnable_WaterFX);
+		if (Var::BEnable_WaterFX)
+		{
+			Function::WaterSheetingScreenFX(1);
+		}
+		else
+		{
+			Function::WaterSheetingScreenFX(0);
+		}
+		
+		ImGui::Checkbox("Poison FX", &Var::BEnable_PoisonFX);
+		if (Var::BEnable_PoisonFX)
+		{
+			Function::PoisonScreenFX(1);
+		}
+		else
+		{
+			Function::PoisonScreenFX(0);
+		}
+
+		ImGui::Separator(); ImGui::Text("Skybox");
+	
+		ImGui::Checkbox("Sky Rotation", &Var::BCustom_SkyRotation);
+		if (Var::BCustom_SkyRotation)
+		{
+			ImGui::SliderFloat("Rotation a1 (float)", &Var::SkyRotation_a1, 0, 360);
+			if (ImGui::Button("Apply Rotation"))
+			{
+				Function::SkyRotation(Var::SkyRotation_a1);
 			}
 		}
 
