@@ -157,6 +157,22 @@ void Engine_Tab()
 				}
 			}
 		}
+		ImGui::Separator();
+		ImGui::Checkbox("Chams color", &Var::BCustom_HUD);
+		if (Var::BCustom_HUD)
+		{
+			if (ImGui::CollapsingHeader("Chams col (a1, a2, a3)"))
+			{
+				ImGui::SliderFloat("Chams col : A1", &Var::chams_a1, 0.00, 1);
+				ImGui::SliderFloat("Chams col : A2", &Var::chams_a2, 0.00, 1);
+				ImGui::SliderFloat("Chams col : A3", &Var::chams_a3, 0.00, 1);
+			
+				if (ImGui::Button("Apply Chams"))
+				{
+					Function::chams(Var::chams_a1, Var::chams_a2, Var::chams_a3);
+				}
+			}
+		}
 
 		ImGui::EndChild();
 	}
