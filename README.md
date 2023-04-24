@@ -11,6 +11,11 @@ il faut aussi savoir que vous pouvez injecter le DLL avec 'ProcessHacker 2.O'
 
 Review : https://youtu.be/PZfW4VswzFU
 
+**NEW CONFIGURATION (SAVE/LOAD)**
+
+
+https://user-images.githubusercontent.com/93995570/234127187-d5c0cedd-4082-4642-a4f7-cf806d55f47d.mp4
+
 IMAGE :
 
 ![Screenshot](https://cdn.discordapp.com/attachments/1097539129522270228/1100083245971939450/Capture_decran_2023-04-24_173709.png)
@@ -25,10 +30,6 @@ je vais aussi faire une autre méthode que les téléchargement des camouflages,
 ![Screenshot](https://cdn.discordapp.com/attachments/1099926433796735008/1100125614171750400/image.png)
 
 
-**CONFIGURATION (SAVE/LOAD)**
-
-
-https://user-images.githubusercontent.com/93995570/234127187-d5c0cedd-4082-4642-a4f7-cf806d55f47d.mp4
 
 **DISCORD : discord.gg/infarcted**
 
