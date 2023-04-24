@@ -11,7 +11,7 @@ il faut aussi savoir que vous pouvez injecter le DLL avec 'ProcessHacker 2.O'
 
 Review : https://youtu.be/PZfW4VswzFU
 
-**NEW CONFIGURATION (SAVE/LOAD)**
+**Nouvelle ajout CONFIGURATION (SAVE/LOAD)**
 
 
 https://user-images.githubusercontent.com/93995570/234127187-d5c0cedd-4082-4642-a4f7-cf806d55f47d.mp4
