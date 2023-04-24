@@ -26,7 +26,7 @@ je vais aussi faire une autre méthode que les téléchargement des camouflages,
 
 
 **CONFIGURATION (SAVE/LOAD)**
-![Watch the video](https://youtu.be/S6FCL6_kBFw))
+[![Watch the video](https://i9.ytimg.com/vi/S6FCL6_kBFw/mq2.jpg?sqp=COD3m6IG-oaymwEmCMACELQB8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgZChPMA8%3D&rs=AOn4CLDF6dm_Wvgwh9ISjTm1aqdh-DnV7w&retry=2)](https://youtu.be/S6FCL6_kBFw)
 
 **DISCORD : discord.gg/infarcted**
 
