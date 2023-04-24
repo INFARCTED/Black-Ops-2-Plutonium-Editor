@@ -21,4 +21,9 @@ je vais aussi faire une autre méthode que les téléchargement des camouflages,
 **METHODE ACTUEL (NUL A CHIER !) :**
 ![Screenshot](https://cdn.discordapp.com/attachments/1099926433796735008/1100101695687643147/image.png)
 
+**SCROLLBAR (ajouté)**
+![Screenshot](https://cdn.discordapp.com/attachments/1099926433796735008/1100125614171750400/image.png)
+
 **DISCORD : discord.gg/infarcted**
+
+
