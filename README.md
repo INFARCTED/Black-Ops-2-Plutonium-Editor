@@ -19,6 +19,6 @@ je vais aussi faire une autre méthode que les téléchargement des camouflages,
 (mon idée est de simplement écrire sur les .iwi avec les BYTE(s) pour pouvoir gagner du temps et les changé après un map restart)
 
 **METHODE ACTUEL (NUL A CHIER !) :**
-![Screenshot](https://cdn.discordapp.com/attachments/1097539129522270228/1100084026049568858/image.png)
+![Screenshot](https://cdn.discordapp.com/attachments/1099926433796735008/1100101695687643147/image.png)
 
 **DISCORD : discord.gg/infarcted**
