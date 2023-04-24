@@ -11,6 +11,7 @@ namespace Var {
 	float HUD_a1 = 255; float HUD_a2 = 255; float HUD_a3 = 255; float HUD_a4 = 255;
 	float chams_a1 = 1; float chams_a2 = 1; float chams_a3 = 1;
 	float SkyRotation_a1 = 0;
+	float SkyLight_a1 = 14;
 
 	bool BFieldOfView;
 	bool BThirdPerson;
@@ -27,7 +28,44 @@ namespace Var {
 	bool BEnable_WaterFX;
 	bool BEnable_PoisonFX;
 	bool BCustom_SkyRotation;
+	bool BCustom_Lightsun;
 }
+
+namespace settings {
+
+	static int save_load_num = 0;
+}
+
+static const char* settsName[] =
+{
+	"Config",
+	  "Config1",
+		"Config2",
+		  "Config3",
+			"Config4",
+			  "Config5",
+				"Config6",
+				  "Config7",
+					"Config8",
+					  "Config9",
+						"Config10",
+						"Config11",
+						"Config12",
+						"Config13",
+						"Config14",
+						"Config15",
+						"Config16",
+						"Config17",
+						"Config18",
+						"Config19",
+						"Config20",
+						"Config21",
+						"Config22",
+						"Config23",
+						"Config24",
+						"Config25",
+};
+
 
 int TAB_boutton;
 
