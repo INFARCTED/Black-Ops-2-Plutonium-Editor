@@ -10,6 +10,7 @@ namespace Var {
 	float smoke_a1 = 255; float smoke_a2 = 255; float smoke_a3 = 255; float smoke_a4 = 255;
 	float HUD_a1 = 255; float HUD_a2 = 255; float HUD_a3 = 255; float HUD_a4 = 255;
 	float chams_a1 = 1; float chams_a2 = 1; float chams_a3 = 1;
+	float SkyRotation_a1 = 0;
 
 	bool BFieldOfView;
 	bool BThirdPerson;
@@ -23,6 +24,9 @@ namespace Var {
 	bool BCustom_HUD;
 	bool BCustom_chams;
 	bool BCustom_FOVMIN;
+	bool BEnable_WaterFX;
+	bool BEnable_PoisonFX;
+	bool BCustom_SkyRotation;
 }
 
 int TAB_boutton;
