@@ -100,6 +100,11 @@ namespace Function {
 		*(float*)(0x2A3C520 + 0x8) = a3;
 		*(float*)(0x2A3C520 + 0xC) = a4;
 	}
+
+	void SunLight(float light)
+	{
+		*(float*)0x2A39880 = light;
+	}
 	void DarkMap(int mode)
 	{
 		if (mode == 1) //Simple
