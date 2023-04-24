@@ -242,7 +242,20 @@ namespace Function {
 		*(float*)(0x2A3EBC0 + 0x8) = a3;
 	}
 
+	void WaterSheetingScreenFX(bool value)
+	{
+		*(int*)0x2A3D8A0 = value;
+	}
 
+	void PoisonScreenFX(bool value)
+	{
+		*(int*)0x2A3E020 = value;
+	}
+
+	void SkyRotation(float rotation)
+	{
+		*(float*)0x2A3F220 = rotation;
+	}
 }
 
 
