@@ -6,6 +6,9 @@ namespace Offset {
 	uintptr_t cg_fov = 0x2A413E0;
 	uintptr_t cg_fovmin = 0x2A41440;
 	uintptr_t cg_thirdperson = 0x2A45BE0;
+	//vue
+	uintptr_t pitch_down = 0x2A28720;
+	uintptr_t pitch_up = 0x2A286C0;
 	//Visual
 	uintptr_t cg_usecolorcontrol = 0x2A44800;
 	
@@ -260,6 +263,13 @@ namespace Function {
 	void SkyRotation(float rotation)
 	{
 		*(float*)0x2A3F220 = rotation;
+	}
+
+
+	void PitchCameraView(float down, float up)
+	{
+		*(float*)Offset::pitch_down = down;
+		*(float*)Offset::pitch_up = up;
 	}
 }
 
