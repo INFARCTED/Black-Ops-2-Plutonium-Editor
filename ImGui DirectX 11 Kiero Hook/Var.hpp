@@ -12,6 +12,8 @@ namespace Var {
 	float chams_a1 = 1; float chams_a2 = 1; float chams_a3 = 1;
 	float SkyRotation_a1 = 0;
 	float SkyLight_a1 = 14;
+	float Cam_PitchDown = 85;
+	float Cam_PitchUp = 85;
 
 	bool BFieldOfView;
 	bool BThirdPerson;
@@ -29,6 +31,9 @@ namespace Var {
 	bool BEnable_PoisonFX;
 	bool BCustom_SkyRotation;
 	bool BCustom_Lightsun;
+	//pitch
+	bool BCam_PitchDown;
+	bool BCam_PitchUp;
 }
 
 namespace settings {
