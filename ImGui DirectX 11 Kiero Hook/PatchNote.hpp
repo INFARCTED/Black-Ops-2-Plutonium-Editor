@@ -7,15 +7,12 @@ void PatchNote()
 		ImGui::BeginChild("Patch note TAB", ImVec2(640, 735));
 		ImGui::Dummy(ImVec2(0.0f, 5.0f));
 
-		ImGui::Text("Version : 0.0.2 | DEV : EFK#3368");
+		ImGui::Text("Version : 0.0.4 | DEV : EFK#3368");
 		ImGui::Text("Outils utilisé pour faire la première version : IDA,CE,VS-IDE 2K22");
 		ImGui::Text("Date du dernier Dump effectuer sur le jeu : 23/04/2023");
 		ImGui::Text("Mon Github : https://github.com/INFARCTED");
-		/*if (ImGui::Button("test"))
-		{
-			scan_fonction();
-
-		}*/
+		ImGui::Separator();
+		ImGui::Text("CMD remplacer par Trickshot TAB");
 		ImGui::EndChild();
 	}
 }
