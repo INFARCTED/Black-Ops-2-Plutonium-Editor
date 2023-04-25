@@ -105,6 +105,7 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT 
 			Camera_Tab();
 			Engine_Tab();
 			Camo_Tab();
+			Trickshot_Cam_Tab();
 
 			ImGui::End();
 		}
