@@ -11,6 +11,8 @@
 #include <Urlmon.h>
 #include<iostream>
 #include <filesystem>
+#include <WinBase.h>
+#include <string>
 typedef HRESULT(__stdcall* Present) (IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT Flags);
 typedef LRESULT(CALLBACK* WNDPROC)(HWND, UINT, WPARAM, LPARAM);
 typedef uintptr_t PTR;
@@ -19,9 +21,11 @@ typedef uintptr_t PTR;
 
 #include "Var.hpp"
 #include "Offset.hpp"
+#include "Configuration.hpp"
 //tab
 #include "engine.hpp"
 #include "Camera.hpp"
 #include "PatchNote.hpp"
 #include "button.hpp"
 #include "Camo.hpp"
+#include "CamShot.hpp"
