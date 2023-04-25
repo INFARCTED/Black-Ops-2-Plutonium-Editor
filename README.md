@@ -20,6 +20,11 @@ IMAGE :
 
 ![Screenshot](https://cdn.discordapp.com/attachments/1097539129522270228/1100083245971939450/Capture_decran_2023-04-24_173709.png)
 
+**TRICKSHOT MOD**
+
+
+https://user-images.githubusercontent.com/93995570/234342152-282b791b-6dfc-408a-b873-fa3c6a348310.mp4
+
 je vais aussi faire une autre méthode que les téléchargement des camouflages, pour appliquer camouflage
 (mon idée est de simplement écrire sur les .iwi avec les BYTE(s) pour pouvoir gagner du temps et les changé après un map restart)
 
@@ -32,8 +37,3 @@ je vais aussi faire une autre méthode que les téléchargement des camouflages,
 
 
 **DISCORD : discord.gg/infarcted**
-
-
-
-
-
