@@ -190,9 +190,9 @@ void ImGui::StyleColorsDark(ImGuiStyle* dst)
     colors[ImGuiCol_FrameBg] = ImVec4(0.09f, 0.09f, 0.09f, 1.00f);
     colors[ImGuiCol_FrameBgHovered] = ImVec4(0.26f, 0.59f, 0.98f, 0.40f);
     colors[ImGuiCol_FrameBgActive] = ImVec4(0.26f, 0.59f, 0.98f, 0.67f);
-    colors[ImGuiCol_TitleBg] = ImVec4(0.04f, 0.04f, 0.04f, 1.00f);
-    colors[ImGuiCol_TitleBgActive] = ImVec4(0.16f, 0.29f, 0.48f, 1.00f);
-    colors[ImGuiCol_TitleBgCollapsed] = ImVec4(0.00f, 0.00f, 0.00f, 0.51f);
+    colors[ImGuiCol_TitleBg] = ImVec4(0.01f, 0.01f, 0.01f, 0.64f);
+    colors[ImGuiCol_TitleBgActive] = ImVec4(0.01f, 0.01f, 0.01f, 0.64f);
+    colors[ImGuiCol_TitleBgCollapsed] = ImVec4(0.01f, 0.01f, 0.01f, 0.64f);
     colors[ImGuiCol_MenuBarBg] = ImVec4(0.14f, 0.14f, 0.14f, 1.00f);
     colors[ImGuiCol_ScrollbarBg] = ImVec4(0.02f, 0.02f, 0.02f, 1.00f);
     colors[ImGuiCol_ScrollbarGrab] = ImVec4(0.31f, 0.31f, 0.31f, 1.00f);
@@ -230,14 +230,15 @@ void ImGui::StyleColorsDark(ImGuiStyle* dst)
     colors[ImGuiCol_ModalWindowDimBg] = ImVec4(0.80f, 0.80f, 0.80f, 0.35f);
     style->ChildBorderSize = 0;
     style->WindowBorderSize = 1;
-    style->WindowRounding = 15;
+    style->WindowRounding = 5;
     style->WindowPadding = ImVec2(0, 0);
-    style->ChildRounding = 14;
+    style->ChildRounding = 6;
     style->ItemSpacing = ImVec2(20, 20);
     style->ScrollbarSize = 10;
     style->FrameRounding = 5;
     style->ScrollbarRounding = 15;
     style->PopupRounding = 7.f;
+    style->WindowTitleAlign = ImVec2(0.5f, 0.5f);
 }
 
 void ImGui::StyleColorsClassic(ImGuiStyle* dst)
