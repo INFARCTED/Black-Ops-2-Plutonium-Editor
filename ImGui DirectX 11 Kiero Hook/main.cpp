@@ -59,7 +59,7 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT 
 			init = true;
 		
 		}
-
+	
 		else
 			return oPresent(pSwapChain, SyncInterval, Flags);
 	}
@@ -69,6 +69,8 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT 
 	ImGui::NewFrame();
 	Function::SV_CHEATS(1);
 	Function::CG_USECOLCONTROL(1);
+
+
 		if (GetAsyncKeyState(VK_F2) & 1)
 		{
 			open = !open;
@@ -83,31 +85,53 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT 
 		{
 			Function::CG_THIRDPERSON(0);
 		}
-
-		if (setup_GUI())
+		//Not In Game GUI
+		if (*(bool*)Offset::Is_InGame == 0)
 		{
-			Function::unlock_mouse(0); //0 = unlock mouse
-			ImGui::StyleColorsDark();
-			ImGui::SetNextWindowSize(ImVec2(900, 785));
-			ImGui::Begin(("BO2 re-designer"), nullptr, ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoSavedSettings | ImGuiWindowFlags_NoCollapse);
-			ImGui::SetCursorPos(ImVec2(0, 0));
-			ImGui::BeginChild(("LeftTabs"), ImVec2(230, 785));
-			ImGui::SetCursorPos(ImVec2(25, 55));
-			ImGui::Text(("BLACK OPS 2 (EDITOR)"));
-			ImGui::SetCursorPos(ImVec2(0, 110));
-			ImGui::Text(("   Features"));
-			
+			if (setup_GUI())
+			{
+				Function::unlock_mouse(0); //0 = unlock mouse
+				ImGui::StyleColorsDark();
+				ImGui::SetNextWindowSize(ImVec2(400, 300));
+				ImGui::Begin(("BO2 re-designer (Not In Game)"), nullptr, ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoSavedSettings | ImGuiWindowFlags_NoCollapse);
 
-			Button_draw();
+				ImGui::SliderInt("Prestige Editor : ", &Var::Prestige_value, 0, 999999);
+				if (ImGui::Button("Apply Prestige"))
+				{
+					FunctionPreGame::ChangePrestige(Var::Prestige_value);
+				}
 
-		
-			PatchNote();
-			Camera_Tab();
-			Engine_Tab();
-			Camo_Tab();
-			Trickshot_Cam_Tab();
+				ImGui::End();
+			}
+		}
+		//In Game GUI
+		if (*(bool*)Offset::Is_InGame == 1)
+		{
+			if (setup_GUI())
+			{
+				Function::unlock_mouse(0); //0 = unlock mouse
+				ImGui::StyleColorsDark();
+				ImGui::SetNextWindowSize(ImVec2(900, 785));
+				ImGui::Begin(("BO2 re-designer (In Game)"), nullptr,  ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoSavedSettings | ImGuiWindowFlags_NoCollapse);
+				ImGui::SetCursorPos(ImVec2(0, 0));
+				ImGui::BeginChild(("LeftTabs"), ImVec2(230, 785));
+				ImGui::SetCursorPos(ImVec2(25, 55));
+				ImGui::Text(("BLACK OPS 2 (EDITOR)"));
+				ImGui::SetCursorPos(ImVec2(0, 110));
+				ImGui::Text(("   Features"));
 
-			ImGui::End();
+
+				Button_draw();
+
+
+				PatchNote();
+				Camera_Tab();
+				Engine_Tab();
+				Camo_Tab();
+				Trickshot_Cam_Tab();
+
+				ImGui::End();
+			}
 		}
 		if (!open)
 		{
