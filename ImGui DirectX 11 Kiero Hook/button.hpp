@@ -25,7 +25,7 @@ void Button_draw()
 	}
 
 
-	if (ImGui::Button("CMD", { 230, 61 }))
+	if (ImGui::Button("Trickshot Cam (Custom Game)", { 230, 61 }))
 	{
 		TAB_boutton = 4;
 	}
