@@ -15,6 +15,8 @@ namespace Var {
 	float Cam_PitchDown = 85;
 	float Cam_PitchUp = 85;
 
+	int Prestige_value;
+
 	bool BFieldOfView;
 	bool BThirdPerson;
 	bool BCustom_vc_fbm;
@@ -43,37 +45,37 @@ namespace settings {
 
 static const char* settsName[] =
 {
-	"Config",
-	  "Config1",
-		"Config2",
-		  "Config3",
-			"Config4",
-			  "Config5",
-				"Config6",
-				  "Config7",
-					"Config8",
-					  "Config9",
-						"Config10",
-						"Config11",
-						"Config12",
-						"Config13",
-						"Config14",
-						"Config15",
-						"Config16",
-						"Config17",
-						"Config18",
-						"Config19",
-						"Config20",
-						"Config21",
-						"Config22",
-						"Config23",
-						"Config24",
-						"Config25",
+"Config",
+"Config1",
+"Config2",
+"Config3",
+"Config4",
+"Config5",
+"Config6",
+"Config7",
+"Config8",
+"Config9",
+"Config10",
+"Config11",
+"Config12",
+"Config13",
+"Config14",
+"Config15",
+"Config16",
+"Config17",
+"Config18",
+"Config19",
+"Config20",
+"Config21",
+"Config22",
+"Config23",
+"Config24",
+"Config25",
 };
 
 
 int TAB_boutton;
-
+int PreGame_TAB_boutton;
 
 
 
