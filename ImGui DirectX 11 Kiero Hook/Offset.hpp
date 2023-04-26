@@ -278,12 +278,6 @@ namespace Function {
 		*(float*)Offset::pitch_up = up;
 	}
 
-
-//	const static auto ExecuteServerCMD = reinterpret_cast<std::uintptr_t(__fastcall*)(const char*)>(0x630650); ///5B3070
-	
-	//const static auto Cbuf_AddText = reinterpret_cast<std::uintptr_t(__fastcall*)(int, const char*)>(0xD6FE00); //C25A04 //(je l'enlève de la source !)
-
-
 }
 
 
