@@ -1,4 +1,4 @@
-# Black-Ops-2-Plutonium-Editor
+# Black-Ops-2-Plutonium-Editor (Multiplayer)
 BO2 PLUTONIUM EDITOR (DISCORD : EFK#3368)
 
 **DISCORD : discord.gg/infarcted**
