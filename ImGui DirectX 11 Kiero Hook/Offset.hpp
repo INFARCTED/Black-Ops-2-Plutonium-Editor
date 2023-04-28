@@ -277,7 +277,6 @@ namespace Function {
 		*(float*)Offset::pitch_down = down;
 		*(float*)Offset::pitch_up = up;
 	}
-
 }
 
 
@@ -286,8 +285,6 @@ namespace FunctionPreGame {
 	{
 		*(int*)Offset::Prestige = Prestige;
 	}
-
-
 }
 
 
