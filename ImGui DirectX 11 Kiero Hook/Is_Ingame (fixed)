@@ -10,7 +10,7 @@ namespace Offset {
 	uintptr_t pitch_down = 0x2A28720;
 	uintptr_t pitch_up = 0x2A286C0;
 	//Visual
-	uintptr_t cg_usecolorcontrol = 0x2A44800;
+	uintptr_t cg_usecolorcontrol = 0xD76DAC; //00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 91 39 08 00 A0 1F 05 00 00 00 00 00 A8 05 2F 1A
 	//Overlay
 	uintptr_t Is_InGame = 0xD76DB0;
 	//Pre-Game
@@ -277,6 +277,13 @@ namespace Function {
 		*(float*)Offset::pitch_down = down;
 		*(float*)Offset::pitch_up = up;
 	}
+
+
+//	const static auto ExecuteServerCMD = reinterpret_cast<std::uintptr_t(__fastcall*)(const char*)>(0x630650); ///5B3070
+	
+	//const static auto Cbuf_AddText = reinterpret_cast<std::uintptr_t(__fastcall*)(int, const char*)>(0xD6FE00); //C25A04 //(je l'enlève de la source !)
+
+
 }
 
 
@@ -285,6 +292,8 @@ namespace FunctionPreGame {
 	{
 		*(int*)Offset::Prestige = Prestige;
 	}
+
+
 }
 
 
